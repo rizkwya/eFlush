@@ -1,0 +1,7 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.EFlush" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@drawable/bg_gradient</item>
+        <!-- Tambahkan item lain jika perlu -->
+    </style>
+    <style name="Theme.EFlush" parent="Base.Theme.EFlush" />
+</resources>

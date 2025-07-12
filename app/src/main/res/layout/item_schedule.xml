@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="top|center_horizontal">
+
+    <!-- Judul -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jadwal Penyiraman"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#1976D2"
+        android:gravity="start"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Baris tanggal -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="Tanggal"
+            android:textSize="14sp"
+            android:textColor="#1976D2"
+            android:gravity="start"/>
+
+        <TextView
+            android:id="@+id/dateText"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="Hari, 19 Jun 2025"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:gravity="center_vertical"
+            android:layout_marginStart="12dp"/>
+    </LinearLayout>
+
+
+    <!-- Baris jam mulai -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="Mulai"
+            android:textSize="14sp"
+            android:textColor="#1976D2"
+            android:gravity="start"/>
+
+        <Spinner
+            android:id="@+id/timeOnSpinner"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"/>
+    </LinearLayout>
+
+    <!-- Baris jam selesai -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="Selesai"
+            android:textSize="14sp"
+            android:textColor="#1976D2"
+            android:gravity="start"/>
+
+        <Spinner
+            android:id="@+id/timeOffSpinner"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"/>
+    </LinearLayout>
+
+    <!-- Tombol Simpan di pojok kanan bawah -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end">
+
+        <Button
+            android:id="@+id/btnSaveSchedule"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:minWidth="64dp"
+            android:text="Simpan"
+            android:textSize="14sp"
+            android:backgroundTint="#1976D2"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="end"/>
+    </LinearLayout>
+</LinearLayout>
